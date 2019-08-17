@@ -2,715 +2,493 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tirtha Kharel</title>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css">
+    <style>
+        .hover-over:hover {
+            color: rgba(255, 255, 255, 1)
+        }
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+        .opaque-light {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
 
-  <title>Tirtha Kharel</title>
+        .opaque-light-less {
+            background-color: rgba(255, 255, 255, 0.75);
 
-  <!-- Custom fonts for this theme -->
-  <link href="fonts/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        }
 
-  <!-- Plugin styles -->
-  <link href="css/vendor/fancybox/jquery.fancybox.min.css" rel="stylesheet">
-  <link href="css/vendor/html5-device-mockups/css/device-mockups.min.css" rel="stylesheet">
-  <link href="css/vendor/slick-carousel/slick.css" rel="stylesheet">
+        div.opaque-light-less h1 {
+            color: black
+        }
 
-  <!-- Custom styles for this theme -->
-  <!--link href="css/theme-default.css" rel="stylesheet"-->
-  <!-- Alternate color schemes: uncomment to use! -->
-  <link href="css/theme-blue.css" rel="stylesheet">
-  <!-- <link href="css/theme-green.css" rel="stylesheet"> -->
-  <!-- <link href="css/theme-yellow.css" rel="stylesheet"> -->
-  <!-- <link href="css/theme-orange.css" rel="stylesheet"> -->
-  <!-- <link href="css/theme-purple.css" rel="stylesheet"> -->
-  <!-- <link href="css/theme-turquoise.css" rel="stylesheet"> -->
-  <!-- <link href="css/theme-pink.css" rel="stylesheet"> -->
-  <!-- <link href="css/theme-brown.css" rel="stylesheet"> -->
+        div.opaque-light-less h3 {
+            color: black
+        }
 
+        hr.light-back {
+            border: .5px solid rgb(130, 130, 127);
+        }
+
+        p.light-back {
+            color: rgb(99, 99, 99)
+        }
+
+        p.exp-desc {
+            font-weight: lighter;
+            color: black;
+        }
+
+        .opaque-dark {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .opaque-darker {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        .top-wrap::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            content: '';
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .top-wrap-height {
+            height: 100vh;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 2vh;
+            z-index: 99;
+            left: 0;
+            right: 0;
+        }
+
+        i {
+            font-size: 2em;
+        }
+
+        i.uk-link-i:hover {
+            color: white;
+        }
+
+        .centered {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .black {
+            color: black
+        }
+    </style>
 </head>
 
-<body id="page-top">
+<body>
 
-  <!-- * * * * * * * * -->
-  <!-- * Navigation * -->
-  <!-- * * * * * * * * -->
+    <!-- TOP -->
+    <div id="home" class="top-wrap uk-light uk-position-relative">
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-main">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img class="navbar-brand-logo" src="img/facenav.png" alt=""-->
-          Tirtha Kharel
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#process">Experience</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Projects
-            </a>
-            <div class="dropdown-menu shadow border-0" aria-labelledby="portfolioDropdown">
-              <a class="dropdown-item js-scroll-trigger" href="#portfolio-carousel">Carousel</a>
-              <a class="dropdown-item js-scroll-trigger" href="#portfolio-grid">Grid</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#footer">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- * * * * * * * -->
-  <!-- * Masthead * -->
-  <!-- * * * * * * * -->
-
-  <header class="masthead masthead-full text-white">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col text-center">
-          <img class="masthead-logo mb-4" src="img/face.jpg" alt="">
-          <div class="masthead-title">Tirtha Kharel</div>
-          <hr class="primary-masthead medium">
-          <div class="footer-social" style="margin-top: 2rem">
-            <!-- Social Link - Email -->
-            <a class="px-3 text-white-50" href="mailto:tkharel@seas.upenn.edu">
-              <i class="fas fa-envelope fa-2x fa-fw"></i>
-          </a>
-            <!-- Social Link - Github -->
-            <a class="px-3 text-white-50" href="https://github.com/tirthakharel">
-              <i class="fab fa-github fa-2x fa-fw"></i>
-          </a>
-            <!-- Social Link - LinkedIn -->
-            <a class="px-3 text-white-50" href="https://www.linkedin.com/in/tirthakharel/">
-              <i class="fab fa-linkedin-in fa-2x fa-fw"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="masthead-scroll">
-      <a href="#about" class="masthead-scroll-btn js-scroll-trigger">
-        <i class="fas fa-angle-down"></i>
-      </a>
-    </div>
-  </header>
-
-  <!-- * * * * * * * * * -->
-  <!-- * About Section * -->
-  <!-- * * * * * * * * * -->
-
-  <section class="page-section text-center" id="about">
-    <div class="container-fluid">
-      <h1 class="page-section-heading text-uppercase">About</h1>
-      <hr class="primary small mb-5">
-      <h4 class="text-uppercase">Education</h4>
-      <hr class="primary small mb-5">
-      <h4 class="text-uppercase">Classes</h4>
-      <div class="container">
-        <div class="row no-gutters">
-          <!-- Portfolio Grid - Item 1 -->
-          <div class="carousel-portfolio-item first-item bg-dark text-center text-sm-left">
-            <div class="container">
-              <div class="row h-100 align-items-left">
-                <div class="col-lg-6 col-xl-4">
-                  <h3 class="text-uppercase m-0">fall 2018</h3>
-                  <hr class="primary small ml-lg-0 mb-4">
-                  <a data-toggle="modal" data-target="#portfolio-modal-1" href="javascript:;" class="btn btn-outline-light">View Details
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Portfolio Grid - Item 2 -->
-          <div class="col-lg-6 col-xl-4">
-            <a class="portfolio-grid-item" href="img/portfolio/grid/2.jpg" data-fancybox="gallery" data-caption="Caption #2">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>SPRING 2019</h2>
-                  <a data-toggle="modal" data-target="#portfolio-modal-2" href="javascript:;" class="btn btn-outline-light">View Details
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                  </a>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio/grid/2.jpg" alt="">
-            </a>
-          </div>
-          <!-- Portfolio Grid - Item 3 >
-          <div class="col-lg-6 col-xl-4">
-            <a class="portfolio-grid-item" href="img/portfolio/grid/3.jpg" data-fancybox="gallery" data-caption="Caption #3">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Project Title</h2>
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio/grid/3.jpg" alt="">
-            </a>
-          </div>
-          < Portfolio Grid - Item 4 >
-          <div class="col-lg-6 col-xl-4">
-            <a class="portfolio-grid-item" href="img/portfolio/grid/4.jpg" data-fancybox="gallery" data-caption="Caption #4">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Project Title</h2>
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio/grid/4.jpg" alt="">
-            </a>
-          </div>
-          < Portfolio Grid - Item 5 >
-          <div class="col-lg-6 col-xl-4">
-            <a class="portfolio-grid-item" href="img/portfolio/grid/5.jpg" data-fancybox="gallery" data-caption="Caption #5">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Project Title</h2>
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio/grid/5.jpg" alt="">
-            </a>
-          </div>
-          < Portfolio Grid - Item 6 >
-          <div class="col-lg-6 col-xl-4">
-            <a class="portfolio-grid-item" href="img/portfolio/grid/6.jpg" data-fancybox="gallery" data-caption="Caption #6">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Project Title</h2>
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio/grid/6.jpg" alt="">
-            </a>
-        </div-->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- * * * * * * * * * * * * * * -->
-  <!-- * Skills Section - Carousel * -->
-  <!-- * * * * * * * * * * * * * * -->
-
-  <section class="page-section text-center bg-light" id="skills">
-    <div class="container">
-      <h2 class="page-section-heading text-uppercase">Skills</h2>
-      <hr class="primary small mb-5">
-      <div class="carousel-team">
-        <!-- Team Carousel - Item 1 -->
-        <div class="carousel-team-item">
-          <div class="carousel-team-item-content d-flex align-items-center justify-content-center">
-            <div class="text-center p-3">
-              <div class="h4 text-uppercase"><i class="fab fa-java"></i>  Java</div>
-            </div>
-          </div>
-          <div class="overlay"></div>
-          <!-- Team Member Image -->
-          <img class="img-fluid" src="img/skills/java.jpg" alt="">
-        </div>
-        <!-- Team Carousel - Item 2 -->
-        <div class="carousel-team-item">
-          <div class="carousel-team-item-content d-flex align-items-center justify-content-center">
-            <div class="text-center p-3">
-              <div class="h4 text-uppercase"><i class="fab fa-python"></i>  Python</div>
-            </div>
-          </div>
-          <div class="overlay"></div>
-          <!-- Team Member Image -->
-          <img class="img-fluid" src="img/skills/python.jpg" alt="">
-        </div>
-        <!-- Team Carousel - Item 3 -->
-        <div class="carousel-team-item">
-          <div class="carousel-team-item-content d-flex align-items-center justify-content-center">
-            <div class="text-center p-3">
-              <div class="h4 text-uppercase">OCaml</div>
-            </div>
-          </div>
-          <div class="overlay"></div>
-          <!-- Team Member Image -->
-          <img class="img-fluid" src="img/skills/ocaml.jpg" alt="">
-        </div>
-        <!-- Team Carousel - Item 4 -->
-        <div class="carousel-team-item">
-          <div class="carousel-team-item-content d-flex align-items-center justify-content-center">
-            <div class="text-center p-3">
-              <div class="h4 text-uppercase">SQL</div>
-            </div>
-          </div>
-          <div class="overlay"></div>
-          <!-- Team Member Image -->
-          <img class="img-fluid" src="img/skills/sql.jpg" alt="">
-        </div>
-        <!-- Team Carousel - Item 5 -->
-        <div class="carousel-team-item">
-          <div class="carousel-team-item-content d-flex align-items-center justify-content-center">
-            <div class="text-center p-3">
-              <div class="h4 text-uppercase"><i class="fab fa-html5"></i>  HTML5/  <i class="fab fa-css3-alt"></i>  CSS3</div>
-            </div>
-          </div>
-          <div class="overlay"></div>
-          <!-- Team Member Image -->
-          <img class="img-fluid" src="img/skills/html.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- * * * * * * * * * * * * * * -->
-  <!-- * Callout Section - Full * -->
-  <!-- * * * * * * * * * * * * * * -->
-
-  <!--section class="callout callout-full">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center">
-        <div class="col-xl-10 text-center">
-          <div class="callout-text text-white">Good <span class="text-primary">design</span> is finding that perfect balance between the way something <span class="text-primary">looks</span> and how it <span class="text-primary">functions</span>.</div>
-          <hr class="primary small mb-5">
-          <a class="btn btn-outline-light js-scroll-trigger" href="#process">How we work</a>
-        </div>
-      </div>
-    </div>
-</section-->
-
-  <!-- * * * * * * * * * * -->
-  <!-- * Process Section * -->
-  <!-- * * * * * * * * * * -->
-
-  <section class="page-section" id="process">
-    <div class="container">
-      <h2 class="page-section-heading text-uppercase text-center">Our Process</h2>
-      <p class="lead m-0 text-center">Here is an overview of how we approach each new project.</p>
-      <hr class="primary small mb-5">
-      <div class="row">
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <!-- Process Column 1 -->
-          <div class="process-list">
-            <div class="process-list-icon">
-              <i class="fas fa-drafting-compass"></i>
-            </div>
-            <div class="process-list-content">
-              <h4 class="text-uppercase mb-3">Plan</h4>
-              <ul>
-                <li>Client interview</li>
-                <li>Gather consumer data</li>
-                <li>Create content strategy</li>
-                <li>Analyze research</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <!-- Process Column 2 -->
-          <div class="process-list">
-            <div class="process-list-icon">
-              <i class="fas fa-pencil-ruler"></i>
-            </div>
-            <div class="process-list-content">
-              <h4 class="text-uppercase mb-3">Create</h4>
-              <ul>
-                <li>Build wireframes</li>
-                <li>Gather client feedback</li>
-                <li>Application development</li>
-                <li>Marketing review</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <!-- Process Column 3 -->
-          <div class="process-list">
-            <div class="process-list-icon">
-              <i class="fas fa-rocket"></i>
-            </div>
-            <div class="process-list-content">
-              <h4 class="text-uppercase mb-3">Launch</h4>
-              <ul>
-                <li>Deploy website</li>
-                <li>Market product launch</li>
-                <li>Collect user data</li>
-                <li>Quarterly reporting</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- * * * * * * * * * * * * * * * * * -->
-  <!-- * Portfolio Section - Carousel * -->
-  <!-- * * * * * * * * * * * * * * * * * -->
-
-  <section id="portfolio-carousel">
-    <div class="carousel-portfolio">
-      <!-- Portfolio Carousel - Item 1 -->
-      <div class="carousel-portfolio-item first-item bg-dark text-center text-lg-left">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-lg-6 col-xl-8">
-              <div class="device-wrapper mb-3 mb-lg-0">
-                <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
-                  <div class="screen">
-                    <!-- Carousel Image -->
-                    <img class="img-fluid" src="img/portfolio/carousel/item-1-img.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-              <h3 class="text-uppercase m-0">Project Name</h3>
-              <p class="mb-0">Project Category</p>
-              <hr class="primary small ml-lg-0 mb-4">
-              <a data-toggle="modal" data-target="#portfolio-modal-1" href="javascript:;" class="btn btn-outline-light">View Details
-                <i class="fas fa-long-arrow-alt-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Portfolio Carousel - Item 2 -->
-      <div class="carousel-portfolio-item second-item text-center text-lg-left">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-lg-6 col-xl-8">
-              <div class="device-wrapper mb-3 mb-lg-0">
-                <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
-                  <div class="screen">
-                    <!-- Carousel Image -->
-                    <img class="img-fluid" src="img/portfolio/carousel/item-2-img.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-              <h3 class="text-uppercase m-0">Project Name</h3>
-              <p class="mb-0">Project Category</p>
-              <hr class="primary small ml-lg-0 mb-4">
-              <a data-toggle="modal" data-target="#portfolio-modal-2" href="javascript:;" class="btn btn-outline-light">View Details
-                <i class="fas fa-long-arrow-alt-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Portfolio Carousel - Item 3 -->
-      <div class="carousel-portfolio-item third-item text-center text-lg-left">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-lg-6 col-xl-8">
-              <div class="device-wrapper mb-3 mb-lg-0">
-                <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
-                  <div class="screen">
-                    <!-- Carousel Image -->
-                    <img class="img-fluid" src="img/portfolio/carousel/item-3-img.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-              <h3 class="text-uppercase m-0">Project Name</h3>
-              <p class="mb-0">Project Category</p>
-              <hr class="primary small ml-lg-0 mb-4">
-              <a data-toggle="modal" data-target="#portfolio-modal-3" href="javascript:;" class="btn btn-outline-light">View Details
-                <i class="fas fa-long-arrow-alt-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Portfolio Carousel - Item 4 -->
-      <div class="carousel-portfolio-item fourth-item text-center text-lg-left">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-lg-6 col-xl-8">
-              <div class="device-wrapper mb-3 mb-lg-0">
-                <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
-                  <div class="screen">
-                    <!-- Carousel Image -->
-                    <img class="img-fluid" src="img/portfolio/carousel/item-4-img.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-              <h3 class="text-uppercase m-0">Project Name</h3>
-              <p class="mb-0">Project Category</p>
-              <hr class="primary small ml-lg-0 mb-4">
-              <a data-toggle="modal" data-target="#portfolio-modal-4" href="javascript:;" class="btn btn-outline-light">View Details
-                <i class="fas fa-long-arrow-alt-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Modal - 1 -->
-  <div class="modal fade portfolio-modal" id="portfolio-modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-8 mx-auto">
-                <h3 class="text-uppercase portfolio-modal-heading">Project Name</h3>
-                <hr class="primary small">
-                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, debitis, voluptatum adipisci voluptate nulla quibusdam deleniti explicabo quo, maxime voluptatibus totam laboriosam at impedit est. Labore repudiandae saepe quia.</p>
-                <div class="device-wrapper my-5">
-                  <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
-                    <div class="screen">
-                      <!-- Screen Image -->
-                      <img class="img-fluid" src="img/portfolio/carousel/item-1-img.jpg" alt="">
+        <div class="navbar" data-uk-sticky="cls-active: uk-background-secondary opaque-darker uk-box-shadow-medium; top: 100vh; animation: uk-animation-slide-top">
+            <div class="uk-container">
+                <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav">
+                            <li class="hover-over uk-visible@s"><a href="#home" data-uk-icon="home" uk-scroll></a></li>
+                            <li class="hover-over uk-visible@s"><a href="#education" uk-scroll>education</a></li>
+                            <li class="hover-over uk-visible@s"><a href="#skills" uk-scroll>Skills</a></li>
+                            <li class="hover-over uk-visible@s"><a href="#experience" uk-scroll>Experience</a></li>
+                            <li class="hover-over uk-visible@s"><a href="#projects" uk-scroll>Projects</a></li>
+                            <li class="hover-over uk-visible@s"><a href="#contact" uk-scroll>Contact Me</a></li>
+                            <li class="hover-over uk-hidden@s"><a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-nav">
+                                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                  </div>
-                </div>
-                <ul class="list-unstyled mb-5">
-                  <li class="list-unstyled-item">
-                    Client: <strong><a class="text-white" href="#">Start Bootstrap</a></strong>
-                  </li>
-                  <li class="list-unstyled-item">
-                    Service: <strong><a class="text-white" href="#">Web Development</a></strong>
-                  </li>
-                  <li class="list-unstyled-item">
-                    Date: <strong><a class="text-white" href="#">January 2019</a></strong>
-                  </li>
-                </ul>
-                <button type="button" class="btn btn-light" data-dismiss="modal">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
+                </nav>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Portfolio Modal - 2 -->
-  <div class="modal fade portfolio-modal" id="portfolio-modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-8 mx-auto">
-                <h3 class="text-uppercase portfolio-modal-heading">Project Name</h3>
-                <hr class="primary small">
-                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, debitis, voluptatum adipisci voluptate nulla quibusdam deleniti explicabo quo, maxime voluptatibus totam laboriosam at impedit est. Labore repudiandae saepe quia.</p>
-                <div class="device-wrapper my-5">
-                  <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
-                    <div class="screen">
-                      <!-- Screen Image -->
-                      <img class="img-fluid" src="img/portfolio/carousel/item-2-img.jpg" alt="">
+        <div class="uk-cover-container top-wrap-height uk-light uk-flex uk-flex-middle uk-flex-center">
+
+            <div class="uk-container uk-text-center uk-position-relative" data-uk-parallax="y: 0,50; easing:0; opacity:0.2" style="z-index: 2">
+                <div class="" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
+                    <h1 class="uk-text-primary uk-heading-medium uk-visible@m uk-text-bold uk-margin-small-bottom">Tirtha Kharel</h1>
+                    <h1 class="uk-text-primary uk-heading-small uk-hidden@m uk-text-bold uk-margin-small-bottom">Tirtha Kharel</h1>
+                    <div class="uk-flex uk-flex-auto uk-margin-small-bottom">
+                        <img class="centered uk-border-circle" src="img/tkharel.jpg" alt="face" style="height: 244px; width: 245px">
                     </div>
-                  </div>
-                </div>
-                <ul class="list-unstyled mb-5">
-                  <li class="list-unstyled-item">
-                    Client: <strong><a class="text-white" href="#">Start Bootstrap</a></strong>
-                  </li>
-                  <li class="list-unstyled-item">
-                    Service: <strong><a class="text-white" href="#">Web Development</a></strong>
-                  </li>
-                  <li class="list-unstyled-item">
-                    Date: <strong><a class="text-white" href="#">January 2019</a></strong>
-                  </li>
-                </ul>
-                <button type="button" class="btn btn-light" data-dismiss="modal">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal - 3 -->
-  <div class="modal fade portfolio-modal" id="portfolio-modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-8 mx-auto">
-                <h3 class="text-uppercase portfolio-modal-heading">Project Name</h3>
-                <hr class="primary small">
-                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, debitis, voluptatum adipisci voluptate nulla quibusdam deleniti explicabo quo, maxime voluptatibus totam laboriosam at impedit est. Labore repudiandae saepe quia.</p>
-                <div class="device-wrapper my-5">
-                  <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
-                    <div class="screen">
-                      <!-- Screen Image -->
-                      <img class="img-fluid" src="img/portfolio/carousel/item-3-img.jpg" alt="">
+                    <hr class="uk-visible@s">
+                    <div class="uk-visible@s">
+                        <a class="uk-link-toggle" uk-tooltip="title: Github; pos: bottom" href="https://github.com/tirthakharel" target="_blank"> <i class="uk-link-i fab fa-github"></i> </a>
+                        <a class="uk-link-toggle uk-margin-left" uk-tooltip="title: LinkedIn; pos: bottom" href="https://linkedin.com/in/tirthakharel" target="_blank"> <i class="uk-link-i fab fa-linkedin-in"></i> </a>
+                        <a class="uk-link-toggle uk-margin-left" uk-tooltip="title: tkharel@seas.upenn.edu; pos: bottom" href="mailto:tkharel@seas.upenn.edu" target="_blank"> <i class="uk-link-i fas fa-envelope"></i> </a>
+                        <a class="uk-link-toggle uk-margin-left" uk-tooltip="title: Resume; pos: bottom" href="TKharel_Resume_Website" target="_blank"> <i class="uk-link-i fas fa-file-pdf"></i> </a>
                     </div>
-                  </div>
                 </div>
-                <ul class="list-unstyled mb-5">
-                  <li class="list-unstyled-item">
-                    Client: <strong><a class="text-white" href="#">Start Bootstrap</a></strong>
-                  </li>
-                  <li class="list-unstyled-item">
-                    Service: <strong><a class="text-white" href="#">Web Development</a></strong>
-                  </li>
-                  <li class="list-unstyled-item">
-                    Date: <strong><a class="text-white" href="#">January 2019</a></strong>
-                  </li>
-                </ul>
-                <button type="button" class="btn btn-light" data-dismiss="modal">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Portfolio Modal - 4 -->
-  <div class="modal fade portfolio-modal" id="portfolio-modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="fas fa-times"></i>
-          </button>
+            <img class="" src="img/top-background.jpg" alt="" data-uk-cover data-uk-img>
         </div>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-8 mx-auto">
-                <h3 class="text-uppercase portfolio-modal-heading">Project Name</h3>
-                <hr class="primary small">
-                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, debitis, voluptatum adipisci voluptate nulla quibusdam deleniti explicabo quo, maxime voluptatibus totam laboriosam at impedit est. Labore repudiandae saepe quia.</p>
-                <div class="device-wrapper my-5">
-                  <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
-                    <div class="screen">
-                      <!-- Screen Image -->
-                      <img class="img-fluid" src="img/portfolio/carousel/item-4-img.jpg" alt="">
+
+    </div>
+
+    <!-- EDUCATION -->
+    <div id="education" class="uk-section uk-light uk-background-cover uk-background-fixed uk-section-xlarge uk-padding-remove-vertical" style="background-image: url(img/college_green_dark_hd.jpg)">
+        <div data-uk-scrollspy-class="uk-animation-fade" class="uk-container uk-margin-large-bottom" style="z-index: 99">
+
+            <h1 class="uk-heading-medium uk-margin-large-top animate">Education</h1>
+            <hr class="uk-margin-medium-bottom animate">
+            <p class="uk-text-large uk-text-primary animate">
+                I am currently a sophomore at the University of Pennsylvania pursuing a B.S.E. in Computer Science from
+                Penn Engineering. I am also pursuing a M.S.E. in Computer Science and a minor in Data Science
+                from Penn Engineering and a minor in Statistics from Wharton.
+            </p>
+            <div class="uk-flex uk-flex-auto ">
+                <img class="centered uk-background-secondary opaque-light uk-padding" src="img/penn-engineering.png" alt="">
+            </div>
+
+
+            <h2 class="uk-heading-xsmall uk-text-center">Coursework</h2>
+            <hr class="uk-margin-medium-bottom">
+
+            <div class="uk-container-small uk-padding-small centered uk-background-secondary opaque-dark">
+                <ul uk-accordion="collapsible: false animate">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Fall 2018 (4.5 CUs)</a>
+                        <div class="uk-accordion-content">
+                            <ul class="uk-list uk-list-bullet">
+                                <li>CIS 120: Programming Languages & Techniques</li>
+                                <li>CIS 160: Discrete Mathematics</li>
+                                <li>MATH 114: Multivariable Calculus</li>
+                                <li>PHYS 150: Mechanics</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Spring/Summer 2019 (7.5 CUs)</a>
+                        <div class="uk-accordion-content">
+                            <ul class="uk-list uk-list-bullet">
+                                <li>CIS 121: Data Structures & Algorithms</li>
+                                <li>NETS 150: Market & Social Systems on the Internet</li>
+                                <li>LING 106: Introduction to Formal Linguistics</li>
+                                <li>PHYS 151: Electricity and Magnetism</li>
+                                <li>WRIT 076: Writing Seminar: Populism</li>
+                                <hr>
+                                <li>MATH 240: Linear Algebra & Differential Equations</li>
+                                <li>MATH 312: Advanced Linear Algebra</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#">Fall 2019 (6.5 CUs)</a>
+                        <div class="uk-accordion-content">
+                            <ul class="uk-list uk-list-bullet">
+                                <li>CIS 240: Introduction to Computer Architecture</li>
+                                <li>CIS 262: Automata & Complexity</li>
+                                <li>CIS 550: Database & Information Systems (graduate course)</li>
+                                <li>NETS 212: Scalable and Cloud Computing</li>
+                                <li>STAT 430: Probability</li>
+                                <li>CIS 191: Linux/UNIX</li>
+                                <li>CIS 099: Independent Study with Prof. Eric Fouh</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 id="skills" class="uk-heading-small">Skills</h2>
+            <hr class="uk-margin-medium-bottom">
+            <div class="uk-container-small uk-padding-small centered uk-background-secondary opaque-dark">
+                <h3 class="uk-heading-xsmall uk-text-center"> Programming Languages/Frameworks</h3>
+                <dl class="uk-description-list">
+                    <dt style="text-decoration: underline; font-size: 1.25em; color: LightGray">Proficient</dt>
+                    <dd style="">Java, Python, LaTeX, HTML/CSS</dd>
+                    <hr>
+                    <dt style="text-decoration: underline; font-size: 1.25em; color: LightGray">Intermediate</dt>
+                    <dd>OCaml, SQL, Swift, C++, JavaScript, Django, Flask, Vim, Git</dd>
+                    <hr>
+                    <dt style="text-decoration: underline; font-size: 1.25em; color: LightGray">Learning</dt>
+                    <dd>R, PHP, React, </dd>
+                </dl>
+                <hr class="uk-margin-medium-bottom">
+                <h3 class="uk-heading-xsmall uk-text-center uk-margin-small-bottom"> Software </h3>
+                <dl class="uk-description-list">
+                    <dd style="">Microsoft Office Suite, Github, Drupal, Amazon Web Services (AWS)</dd>
+                </dl>
+                <hr class="uk-margin-medium-bottom">
+                <h3 class="uk-heading-xsmall uk-text-center uk-margin-small-bottom"> Interests </h3>
+                <dl class="uk-description-list">
+                    <dd style="">Classical Guitar, Healthcare Policy, Music Production, Basketball, Soccer</dd>
+                </dl>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="experience" class="uk-section uk-light uk-background-cover uk-background-fixed uk-section-xlarge uk-padding-remove-vertical" style="background-image: url(img/code-laptop-dark.jpg)">
+        <div class="uk-container uk-margin-large-bottom" style="z-index: 99">
+
+            <h1 class="uk-heading-medium uk-margin-large-top animate">Experience</h1>
+            <hr class="uk-margin-medium-bottom animate">
+            <div class="uk-container-small uk-flex uk-flex-column centered">
+
+                <div class="uk-flex-middle uk-card-hover uk-background-secondary opaque-light-less uk-padding-remove-left uk-padding" uk-scrollspy-class="uk-animation-fade" uk-grid>
+                    <div class="uk-width-1-4">
+                        <img class="centered" src="img/penn-engineering.png" alt="Image">
                     </div>
-                  </div>
+                    <div class="uk-width-3-4">
+                        <div class="uk-flex uk-flex-auto uk-flex-column">
+                            <h3 class="uk-margin-remove-bottom">CIS Research Assistant</h3>
+                            <p class="uk-text-small light-back uk-margin-remove">University of Pennsylvania | May 2019 - Present</p>
+                            <hr class="uk-margin-small-top uk-margin-small-bottom light-back">
+                            <p class="uk-margin-remove-top exp-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        </div>
+                    </div>
                 </div>
-                <ul class="list-unstyled mb-5">
-                  <li class="list-unstyled-item">
-                    Client: <strong><a class="text-white" href="#">Start Bootstrap</a></strong>
-                  </li>
-                  <li class="list-unstyled-item">
-                    Service: <strong><a class="text-white" href="#">Web Development</a></strong>
-                  </li>
-                  <li class="list-unstyled-item">
-                    Date: <strong><a class="text-white" href="#">January 2019</a></strong>
-                  </li>
-                </ul>
-                <button type="button" class="btn btn-light" data-dismiss="modal">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
+
+                <div class="uk-flex-middle uk-card-hover uk-background-secondary opaque-light-less uk-padding-remove-left uk-padding" uk-scrollspy-class="uk-animation-fade" uk-grid>
+                    <div class="uk-width-1-4">
+                        <img class="centered" src="img/glome.png" alt="Image">
+                    </div>
+                    <div class="uk-width-3-4">
+                        <div class="uk-flex uk-flex-auto uk-flex-column">
+                            <h3 class="uk-margin-remove-bottom">Software Developer</h3>
+                            <p class="uk-text-small light-back uk-margin-remove">Glome App | October 2018 - May 2019</p>
+                            <hr class="uk-margin-small-top uk-margin-small-bottom light-back">
+                            <p class="uk-margin-remove-top exp-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle uk-card-hover uk-background-secondary opaque-light-less uk-padding-remove-left uk-padding" uk-grid>
+                    <div class="uk-width-1-4">
+                        <img class="centered" src="img/has.png" alt="Image" style=" height: 150px ; width: 160px">
+                    </div>
+                    <div class="uk-width-3-4">
+                        <div class="uk-flex uk-flex-auto uk-flex-column">
+                            <h3 class="uk-margin-remove-bottom">Data Analyst</h3>
+                            <p class="uk-text-small light-back uk-margin-remove">Houston Astronomical Society | October 2018 - May 2019</p>
+                            <hr class="uk-margin-small-top uk-margin-small-bottom light-back">
+                            <p class="uk-margin-remove-top exp-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
+
+            <h2 class="uk-heading-xsmall uk-text-center">Extracurriculars</h2>
+            <hr class="uk-margin-medium-bottom">
+            <div class="uk-container-small uk-flex uk-flex-column centered">
+
+                <div class="uk-flex-middle uk-card-hover uk-background-secondary opaque-light-less uk-padding-remove-left uk-padding" uk-scrollspy-class="uk-animation-fade" uk-grid>
+                    <div class="uk-width-1-4">
+                        <img class="centered" src="img/esac-logo.png" alt="Image">
+                    </div>
+                    <div class="uk-width-3-4">
+                        <div class="uk-flex uk-flex-auto uk-flex-column">
+                            <h3 class="uk-margin-remove-bottom">PR Chair</h3>
+                            <p class="uk-text-small light-back uk-margin-remove">Penn ESAC | September 2018 - Present</p>
+                            <hr class="uk-margin-small-top uk-margin-small-bottom light-back">
+                            <p class="uk-margin-remove-top exp-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle uk-card-hover uk-background-secondary opaque-light-less uk-padding-remove-left uk-padding" uk-scrollspy-class="uk-animation-fade" uk-grid>
+                    <div class="uk-width-1-4">
+                        <img class="centered" src="img/dmak-logo.jpeg" alt="Image">
+                    </div>
+                    <div class="uk-width-3-4">
+                        <div class="uk-flex uk-flex-auto uk-flex-column">
+                            <h3 class="uk-margin-remove-bottom">Dancer</h3>
+                            <p class="uk-text-small light-back uk-margin-remove">Penn Dhamaka | March 2019 - Present</p>
+                            <hr class="uk-margin-small-top uk-margin-small-bottom light-back">
+                            <p class="uk-margin-remove-top exp-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h1 id="projects" class="uk-heading-medium uk-margin-large-top animate">Projects</h1>
+            <p class="text-meta">Click on each thumbnail for a more detailed explanation</p>
+            <hr class="uk-margin-medium-bottom animate">
+            <div class="uk-container-small uk-flex uk-flex-column centered">
+
+                <h2 class="uk-heading-xsmall uk-text-center"><span>Completed</span></h2>
+                <div class="uk-grid uk-padding opaque-dark uk-background-secondary uk-grid-medium uk-child-width-1-2@s" style="border: .5px solid rgba(99, 99, 99, .5)">
+                    <div class="uk-width-1-3 uk-text-center">
+                        <a uk-toggle="target: #website-modal">
+                            <div class="uk-height-small uk-background-contain" style="background-image: url(img/website-screenshot.png)"></div>
+                        </a>
+                        <p class="uk-text-primary">Personal Website</p>
+                    </div>
+                    <div class="uk-width-1-3 uk-text-center">
+                        <a uk-toggle="target: #pigeonhole-modal">
+                            <div class="uk-height-small uk-background-contain" style="background-image: url(img/pigeonhole.png)"></div>
+                        </a>
+                        <p class="uk-text-primary">Pigeonhole (NETS 150 Project)</p>
+                    </div>
+                    <div class="uk-width-1-3 uk-text-center">
+                        <a uk-toggle="target: #spades-modal">
+                            <div class="uk-height-small uk-background-contain" style="background-image: url(img/spades.png)"></div>
+                        </a>
+                        <p class="uk-text-primary">Spades (CIS 120 Project)</p>
+                    </div>
+                </div>
+
+                <h2 class="uk-heading-xsmall uk-text-center"><span>In Progress</span></h2>
+                <div class="uk-flex uk-flex-center opaque-dark uk-background-secondary uk-padding uk-grid-medium uk-child-width-1-2@s" style="border: .5px solid rgba(99, 99, 99, .5)" uk-grid>
+                    <div class="uk-width-1-3 uk-text-center">
+                        <a uk-toggle="target: #everest-modal">
+                            <div class="uk-height-small uk-background-contain" style="background-image: url(img/everest.png)"></div>
+                        </a>
+                        <p class="uk-text-primary">Everest Energy Website</p>
+                    </div>
+                    <div class="uk-width-1-3 uk-text-center">
+                        <a uk-toggle="target: #pennbuys-modal">
+                            <div class="uk-height-small uk-background-contain" style="background-image: url(img/penn-logo.png)"></div>
+                        </a>
+                        <p class="uk-text-primary">PennBuys</p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-      </div>
     </div>
-  </div>
 
+    <div id="contact" class="uk-section uk-dark uk-background-cover uk-background-cover uk-padding-remove-vertical" style="background-image: url(img/water.jpg)">
+        <div class="uk-container">
 
-  <!-- * * * * * * -->
-  <!-- * Footer * -->
-  <!-- * * * * * * -->
+            <h1 class="uk-heading-small uk-margin-medium-top animate">Contact Me</h1>
+            <hr class="light-back">
 
-  <footer class="footer text-center text-white-50" id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h5 class="text-uppercase">
-          <i class="fas fa-mobile-alt fa-fw"></i>
-          Call
-        </h5>
-          <a class="text-white-50" href="#">832-668-6762</a>
+            <div class="uk-container-medium uk-flex uk-flex-middle uk-flex-center uk-padding">
+                <a class="uk-link-text" uk-tooltip="title: Github; pos: bottom" href="https://github.com/tirthakharel" target="_blank"><span class="uk-margin-right hover-over" uk-icon="icon: github; ratio: 2"></span></a>
+                <a class="uk-link-text" uk-tooltip="title: LinkedIn; pos: bottom" href="https://www.linkedin.com/in/tirthakharel/" target="_blank"><span class="uk-margin-right hover-over" uk-icon="icon: linkedin; ratio: 2"></span></a>
+                <a class="uk-link-text" uk-tooltip="title: tkharel@seas.upenn.edu; pos: bottom" href="mailto:tkharel@seas.upenn.edu" target="_blank"><span class="uk-margin-right hover-over" uk-icon="icon: mail; ratio: 2"></span></a>
+                <a class="uk-link-text" uk-tooltip="title: Resume; pos: bottom" href="TKharel_Resume_Website.pdf" target="_blank"><span class=" hover-over" uk-icon="icon: file-pdf; ratio: 2"></span></a>
+            </div>
+
         </div>
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h5 class="text-uppercase">
-          <i class="fas fa-file fa-fw"></i>
-          Resume</h5>
-          <div>
-            <a class="text-white-50" href="TKharel_Resume_Website.pdf">Click Here</a>
-          </div>
-      </div>
-        <div class="col-lg-4">
-          <h5 class="text-uppercase">
-          <i class="fas fa-envelope fa-fw"></i>
-          Email
-        </h5>
-          <!-- Make sure to change the mailto address below! -->
-          <a class="text-white-50" href="mailto:tkharel@seas.upenn.edu">tkharel@seas.upenn.edu</a>
-          <a class="text-white-50" href="mailto:tkharel21@gmail.com">tkharel21@gmail.com</a>
-        </div>
-      </div>
-      <div class="footer-social">
-          <!-- Social Link - Github -->
-          <a class="px-3 text-white-50" href="https://github.com/tirthakharel">
-            <i class="fab fa-github fa-2x fa-fw"></i>
-        </a>
-          <!-- Social Link - LinkedIn -->
-          <a class="px-3 text-white-50" href="https://www.linkedin.com/in/tirthakharel/">
-            <i class="fab fa-linkedin-in fa-2x fa-fw"></i>
-        </a>
-      </div>
-      <div class="footer-copyright">
-        &copy; 2019 Tirtha Kharel
-      </div>
     </div>
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="js/vendor/jquery/jquery.min.js"></script>
-  <script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
-  <script src="js/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/vendor/slick-carousel/slick.min.js"></script>
+    </div>
+    </div>
 
-  <!-- Custom scripts for this theme -->
-  <script src="js/contact.js"></script>
-  <script src="js/validation.js"></script>
-  <script src="js/core.js"></script>
+    <div id="website-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded">
+            <button class="uk-modal-close-default" type="button" style="color: LightGray" uk-close></button>
+            <div class="">
+                <h2 class="uk-modal-title" style="color: black">Personal Website</h2>
+            </div>
+            <hr style="border-top: 1px solid LightGray;">
+            <p style="color: black">
+                I built this website in order to showcase my HTML/CSS skills and practice some JavaScript. I used UIKit as
+                a CSS framework.
+            </p>
+            <p class="uk-text-meta" style="color: gray"> HTML5, CSS3, JavaScript, <a href="https://getuikit.com" target="_blank">UIKit</a></p>
+        </div>
+    </div>
 
+    <div id="pigeonhole-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded">
+            <button class="uk-modal-close-default" type="button" style="color: LightGray" uk-close></button>
+            <div class="">
+                <h2 class="uk-modal-title" style="color: black"><a href="https://github.com/tirthakharel/Pigeonhole">Pigeonhole</a></h2>
+            </div>
+            <hr style="border-top: 1px solid LightGray;">
+            <p style="color: black">
+                Working as a team with two other people, created a server application that utilized web-scraping combined with basic
+                search engine techniques (tf-idf) in order to rate compatibility between two people.
+            </p>
+            <p class="uk-text-meta" style="color: gray">Java</p>
+        </div>
+    </div>
+
+    <div id="spades-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded">
+            <button class="uk-modal-close-default" type="button" style="color: LightGray" uk-close></button>
+            <div class="">
+                <h2 class="uk-modal-title" style="color: black"><a href="https://github.com/tirthakharel/SpadesGame">Spades</a></h2>
+            </div>
+            <hr style="border-top: 1px solid LightGray;">
+            <p style="color: black">
+                Created a replica of the classic card games Spades using the Java Swing Library for my final project in CIS 120. It is a two-player game where
+                players get their moves tracked in game and are told whether they are making valid moves or not.
+            </p>
+            <p class="uk-text-meta" style="color: gray">Java, Java Swing</p>
+        </div>
+    </div>
+
+    <div id="everest-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded">
+            <button class="uk-modal-close-default" type="button" style="color: LightGray" uk-close></button>
+            <div class="">
+                <h2 class="uk-modal-title" style="color: black">Everest Energy Website</h2>
+            </div>
+            <hr style="border-top: 1px solid LightGray;">
+            <p style="color: black">
+                In the process of creating a website for the Oil & Gas startup Everest Energy. I am the VP of Technology for this company.
+            </p>
+            <p class="uk-text-meta" style="color: gray">Python, Flask, HTML5, CSS3, JavaScript, UIKit</p>
+        </div>
+    </div>
+
+    <div id="pennbuys-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded">
+            <button class="uk-modal-close-default" type="button" style="color: LightGray" uk-close></button>
+            <div class="">
+                <h2 class="uk-modal-title" style="color: black"><a href="https://github.com/tirthakharel/PennBuys">PennBuys</a></h2>
+            </div>
+            <hr style="border-top: 1px solid LightGray;">
+            <p style="color: black">
+                Using Django, a python backend web framework, I am in the process of creating a Facebook Free & For Sale replacement
+                just for Penn students. Penn students will be able to create an account and post goods for sale, where other students
+                can then contact them through the website.
+            </p>
+            <p class="uk-text-meta" style="color: gray"> Python, Django, HTML5, CSS3, JavaScript</p>
+        </div>
+    </div>
+
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li class="hover-over uk-margin-xsmall-bottom"><a href="#home" uk-scroll>Home</a></li>
+                <li class="hover-over"><a href="#education" uk-scroll>Education</a></li>
+                <li class="hover-over"><a href="#skills" uk-scroll>Skills</a></li>
+                <li class="hover-over"><a href="#experience" uk-scroll>Experience</a></li>
+                <li class="hover-over"><a href="#projects" uk-scroll>Projects</a></li>
+                <li class="hover-over"><a href="#contact" uk-scroll>Contact Me</a></li>
+                <hr>
+                <div class="">
+                    <a class="uk-link-toggle" uk-tooltip="title: Github; pos: bottom" href="https://github.com/tirthakharel" target="_blank"> <i class="uk-link-i fab fa-github"></i> </a>
+                    <a class="uk-link-toggle uk-margin-left" uk-tooltip="title: LinkedIn; pos: bottom" href="https://linkedin.com/in/tirthakharel" target="_blank"> <i class="uk-link-i fab fa-linkedin-in"></i> </a>
+                    <a class="uk-link-toggle uk-margin-left" uk-tooltip="title: tkharel@seas.upenn.edu; pos: bottom" href="mailto:tkharel@seas.upenn.edu" target="_blank"> <i class="uk-link-i fas fa-envelope"></i> </a>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- JS FILES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit-icons.min.js"></script>
+    <script src="https://kit.fontawesome.com/38a434c2e6.js"></script>
 </body>
 
 </html>
